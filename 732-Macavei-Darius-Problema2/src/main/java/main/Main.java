@@ -1,15 +1,15 @@
-package main;
+package main.java.main;
 
-import controller.ProductController;
-import controller.ProductControllerInterface;
-import controller.OrderController;
-import controller.OrderControllerInterface;
-import view.View;
+import main.java.controller.ProductController;
+import main.java.controller.ProductControllerInterface;
+import main.java.controller.OrderController;
+import main.java.controller.OrderControllerInterface;
+import main.java.view.View;
 
 public class Main {
     public static void main(String[] args) {
 
-        ProductControllerInterface productController = (ProductControllerInterface) new ProductController();
+        ProductControllerInterface productController = new ProductController();
         OrderControllerInterface orderController = new OrderController(productController);
         View view = new View(orderController, productController);
         view.run();

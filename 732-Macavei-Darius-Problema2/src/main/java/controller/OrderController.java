@@ -1,7 +1,7 @@
-package controller;
+package main.java.controller;
 
-import model.Product;
-import model.Order;
+import main.java.model.Product;
+import main.java.model.Order;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -60,11 +60,11 @@ public class OrderController implements OrderControllerInterface {
 
     @Override
     public List<Order> sortByPrice() {
-        return orderList.stream().sorted(Comparator.comparingInt(Order::getTotalPrice)).toList();
+        return orderList.stream().sorted(Comparator.comparingInt(Order::getTotalPrice)).collect(Collectors.toList());
     }
 
     public List<Order> filterByProduct(Integer productId) {
-        return orderList.stream().filter((Order) -> Order.getProductList().stream().anyMatch((Product) -> Product.getId().equals(productId))).toList();
+        return orderList.stream().filter((Order) -> Order.getProductList().stream().anyMatch((Product) -> Product.getId().equals(productId))).collect(Collectors.toList());
     }
 
     @Override

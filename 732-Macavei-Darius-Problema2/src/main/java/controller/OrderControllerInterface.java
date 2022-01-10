@@ -1,7 +1,7 @@
-package controller;
+package main.java.controller;
 
-import model.Product;
-import model.Order;
+import main.java.model.Product;
+import main.java.model.Order;
 
 import java.util.List;
 import java.util.Map;

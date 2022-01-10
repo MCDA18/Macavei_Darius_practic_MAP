@@ -1,9 +1,9 @@
-package view;
+package main.java.view;
 
-import controller.ProductControllerInterface;
-import controller.OrderControllerInterface;
-import model.Order;
-import model.Product;
+import main.java.controller.ProductControllerInterface;
+import main.java.controller.OrderControllerInterface;
+import main.java.model.Order;
+import main.java.model.Product;
 
 import java.util.*;
 
