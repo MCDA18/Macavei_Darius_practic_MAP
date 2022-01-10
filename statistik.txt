@@ -1,0 +1,4 @@
+St. Gallen: 65000
+Zürich: 50000
+Thurgau: 38000
+Zürich: 5000
